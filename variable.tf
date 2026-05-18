@@ -1,7 +1,11 @@
-output "instance_id" {
-  value = aws_instance.this.id
+variable "ami_id" {
+  type = string
 }
 
-output "public_ip" {
-  value = aws_instance.this.public_ip
+variable "instance_type" {
+  type = string
+}
+
+variable "instance_name" {
+  type = string
 }
